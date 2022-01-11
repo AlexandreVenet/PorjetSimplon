@@ -1,8 +1,7 @@
-import React, {useState} from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import Wesh from './Delete';
 import reportWebVitals from './reportWebVitals';
 
 
@@ -10,7 +9,6 @@ import reportWebVitals from './reportWebVitals';
 ReactDOM.render(
   <React.StrictMode>
     <App />
-    <Wesh />
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -1,7 +1,14 @@
 import logo from './logo.svg';
+import Delete from './Delete';
 import './App.css';
+import { useState } from 'react';
 
 function App() {
+  const [temp, setTemp] = useState(
+    [
+      "Wesh", "Wosh" 
+    ]
+  )
   return (
     <div className="App">
       <header className="App-header">
@@ -18,10 +25,9 @@ function App() {
           Learn React
         </a>
       </header>
+      {temp.map(item => <Delete msg={item}/>)}
     </div>
   );
 }
-
-
 
 export default App;
