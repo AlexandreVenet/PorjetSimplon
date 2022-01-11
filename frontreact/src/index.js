@@ -2,11 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import Delete from './Delete';
 import reportWebVitals from './reportWebVitals';
 
+
+//    <App />
 ReactDOM.render(
   <React.StrictMode>
     <App />
+    <Delete />
   </React.StrictMode>,
   document.getElementById('root')
 );
