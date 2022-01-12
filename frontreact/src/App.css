@@ -7,8 +7,12 @@
 .listeMessages{
   display: flex;
   flex-direction: column;
-  height: auto;
+  justify-content: flex-end;
   flex-grow: 5;
+  background-color: lightyellow;
+  padding-right: 5%;
+  padding-left: 5%;
+  overflow: scroll;
 }
 
 .envoie{
@@ -29,8 +33,12 @@
 }
 
 input{
-  flex-grow: 1;
+  flex-grow: 0.9;
   height: 30px;
   border-radius: 8px;
   border: 1px gray solid;
+}
+
+img{
+  height: 34px;
 }

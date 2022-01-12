@@ -9,7 +9,6 @@ import './Delete.css'
 // le bouton "supprimer" et "annulé" : Check
 function Delete({msg}) {
     const [sdf, sdfer] = useState(false)
-    console.log(msg)
     if (sdf){
         return(
             <>
