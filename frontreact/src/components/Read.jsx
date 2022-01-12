@@ -18,6 +18,9 @@ class Read extends React.Component
             email: undefined,
             pass: undefined
         };
+
+        // Afficher un élément du JSON pour vérifier que les données sont déjà parsed
+        // console.log(userData[1].firstname);
     }
 
     // Méthode personnelles 
