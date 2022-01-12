@@ -1,0 +1,1 @@
+Fichier nécessaire pour le push git (sinon, dossier vide non envoyé)
