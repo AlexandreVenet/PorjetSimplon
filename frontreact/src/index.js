@@ -8,7 +8,7 @@ import FormUpdate from './FormUpdate';
 ReactDOM.render(
   <React.StrictMode>
       <App />
-      <FormUpdate/>
+      <FormUpdate />
   </React.StrictMode>,
   document.getElementById('root')
 );
