@@ -1,5 +1,6 @@
 // Import
 import React, {useCallback, useState} from 'react'
+import Menu from './logo/Menu.svg'
 import './Delete.css'
 
 // Message d'alerte : Check
@@ -8,8 +9,11 @@ import './Delete.css'
 
 // le bouton "supprimer" et "annulé" : Check
 function Delete({msg}) {
-    const [sdf, sdfer] = useState(false)
-    if (sdf){
+    const [trigger, setTrigger] = useState(false)
+
+    console.log(msg)
+
+    if (trigger){
         return(
             <>
                 <div className='popUpDel'>
@@ -22,8 +26,8 @@ function Delete({msg}) {
                             {msg}
                         </p>
                         <div className='btn__container'>
-                            <button className='delete__btn' onClick={() => sdfer(false)}>Supprimer</button>
-                            <button className='cancel__btn' onClick={() => sdfer(false)}>Annuler</button>
+                            <button className='delete__btn' onClick={() => setTrigger(false)}>Supprimer</button>
+                            <button className='cancel__btn' onClick={() => setTrigger(false)}>Annuler</button>
                         </div>
                     </div>
                 </div>
@@ -31,12 +35,11 @@ function Delete({msg}) {
         )
     } else {
         return(
-            <button onClick={() => {
-                sdfer(true)
+            <img src={Menu} onClick={() => {
+                setTrigger(true)
                 }
             }>
-                Ton fiéfer grand-père
-            </button>
+            </img>
         )
     }
 }

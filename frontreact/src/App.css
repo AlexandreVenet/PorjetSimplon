@@ -12,7 +12,6 @@
   background-color: lightyellow;
   padding-right: 5%;
   padding-left: 5%;
-  overflow: scroll;
 }
 
 .envoie{
@@ -22,6 +21,8 @@
   background-color: peachpuff;
   padding: 2%;
   border-radius: 10px 10px 0px 0px;
+  position: sticky;
+  bottom: 0;
 }
 
 .formEnvoie{
