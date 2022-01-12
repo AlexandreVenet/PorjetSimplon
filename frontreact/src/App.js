@@ -6,26 +6,23 @@ import { useState } from 'react';
 function App() {
   const [temp, setTemp] = useState(
     [
-      "Wesh", "Wosh" 
+      "Wesh",
+      "Wosh"
     ]
   )
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-      {temp.map(item => <Delete msg={item}/>)}
+      <div className='listeMessages'>
+        {temp.map(item => <Delete msg={item}/>)}
+      </div>
+      <div className='envoie'>
+        <form className='formEnvoie'>
+          <input type='Text'></input>
+          <button>
+            W
+          </button>
+        </form>
+      </div>
     </div>
   );
 }
