@@ -39,10 +39,6 @@ function App() {
 
   const [temp, setTemp] = useState(defaultListe)
 
-  const rajoutListe = e => {
-    setTemp(temp.slice(temp.indexOf(e.target.content, 1)))
-  }
-
   // const [temp, setTemp] = useState(
   //   [
   //     "Wesh",
@@ -61,13 +57,13 @@ function App() {
     <div className="App">
       <div className='listeMessages'>
         {/* {temp.map((item, index) => <Read key={index} msg={item}/>)} */}
-        {temp.map((item, index) => {return ( <Read key={index} msg={item.content}/>)}) }
+        {temp.map((item, index) => {return ( <Read key={index} msg={item}/>)}) }
         
 
       </div>
       <div className='envoie'>
         <form className='formEnvoie'>
-          <input type='Text'onChange={rajoutListe} ></input>
+          <input type='Text' ></input>
           {/* onChange={rajoutListe} */}
           <img src={Send}></img>
         </form>

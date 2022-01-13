@@ -11,7 +11,14 @@ import './Delete.css'
 function Delete({msg}) {
     const [trigger, setTrigger] = useState(false)
 
-    console.log(msg)
+    const supprListe = e => {
+        delete msg.content
+    }
+
+    function supprButton() {
+        supprListe()
+        setTrigger(false)
+    }
 
     if (trigger){
         return(
@@ -23,10 +30,10 @@ function Delete({msg}) {
                             <p className='margin__min'>Etes vous sûr de vouloir supprimer ce message ?</p>
                         </div>
                         <p className='msgSuppr'>
-                            {msg}
+                            {msg.content}
                         </p>
                         <div className='btn__container'>
-                            <button className='delete__btn' onClick={() => setTrigger(false)}>Supprimer</button>
+                            <button className='delete__btn' onClick={() => supprButton()}>Supprimer</button>
                             <button className='cancel__btn' onClick={() => setTrigger(false)}>Annuler</button>
                         </div>
                     </div>

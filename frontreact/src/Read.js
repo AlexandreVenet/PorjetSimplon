@@ -6,7 +6,7 @@ function Read({msg}) {
     return(
         <div className='messageBox'>
             <div>
-                {msg}
+                {msg.content}
             </div>
             <Delete msg={msg}/>
         </div>
