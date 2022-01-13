@@ -3,10 +3,10 @@ import { useState } from "react";
 function FormUpdate() {
   const [data, setData] = useState({
     data: {
-    pseudo:"P",
-    age:"A",
-    job:"J",
-    pass:"Pa",
+    pseudo:"",
+    age:"",
+    job:"",
+    pass:"",
     }
   });
   const handleChange = (event) => {
